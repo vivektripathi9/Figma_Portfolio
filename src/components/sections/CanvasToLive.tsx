@@ -54,22 +54,30 @@ export function CanvasToLive() {
         </Reveal>
 
         <Reveal>
-          <div role="group" aria-label="Choose a store" className="flex gap-1 overflow-x-auto rounded-t-2xl border border-b-0 border-line bg-panel p-2">
-            {liveStores.map((item, index) => (
-              <button
-                key={item.slug}
-                type="button"
-                aria-pressed={item.slug === store.slug}
-                onClick={() => {
-                  setSlug(item.slug);
-                  setSplit(52);
-                }}
-                className={`flex shrink-0 items-center gap-2 rounded-lg px-4 py-2 text-sm transition-colors ${item.slug === store.slug ? "bg-panel-raised text-foreground" : "text-muted hover:text-foreground"}`}
-              >
-                <span className="label">{String(index + 1).padStart(2, "0")}</span>
-                {item.name}
-              </button>
-            ))}
+          <p className="label mb-3 flex items-center gap-2">
+            <span aria-hidden="true" className="pulse-dot h-2 w-2 rounded-full bg-figma-green" />
+            Pick a live store
+          </p>
+          <div role="group" aria-label="Choose a store" className="grid grid-cols-3 gap-2 rounded-t-2xl border border-b-0 border-line bg-panel p-2 md:gap-3 md:p-3">
+            {liveStores.map((item) => {
+              const active = item.slug === store.slug;
+              return (
+                <button
+                  key={item.slug}
+                  type="button"
+                  aria-pressed={active}
+                  onClick={() => {
+                    setSlug(item.slug);
+                    setSplit(52);
+                  }}
+                  className={`flex min-h-14 items-center justify-center gap-2.5 rounded-xl border-2 px-2 text-center text-sm font-semibold transition-colors md:min-h-16 md:justify-start md:px-5 md:text-base ${active ? "border-accent bg-accent text-on-accent" : "border-line bg-panel-raised text-foreground hover:border-accent"}`}
+                >
+                  <span aria-hidden="true" className="hidden h-4 w-4 shrink-0 rounded-full ring-2 ring-white/70 md:block" style={{ backgroundColor: item.colors[0].hex }} />
+                  <span className="leading-tight">{item.name}</span>
+                  <span className={`ml-auto hidden text-xs font-normal md:block ${active ? "text-on-accent/70" : "text-soft"}`}>{item.kind}</span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="grid overflow-hidden rounded-b-2xl border border-line bg-panel lg:grid-cols-[1fr_18rem]">

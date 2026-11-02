@@ -13,18 +13,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Anastasia Beverly Hills",
-    subtitle: "Cosmetics & Brows",
-    description:
-      "Frontend work on the beauty ecommerce experience — brows, makeup collections, and campaign storytelling.",
-    image: "/projects/anastasia-beverly-hills.jpg",
-    technologies: ["Ecommerce", "Frontend", "Beauty"],
-    liveUrl: "https://www.anastasiabeverlyhills.com",
-    category: "Beauty",
-    sector: "Health & Beauty",
-      role: "Ecommerce frontend",
-    },
-  {
     title: "Touristal India",
     subtitle: "Education & Travel",
     description:
@@ -34,8 +22,8 @@ export const projects: Project[] = [
     liveUrl: "https://touristalindia.com",
     category: "Travel",
     sector: "Travel & Education",
-      role: "Marketing website",
-    },
+    role: "Marketing website",
+  },
   {
     title: "Butlerco Marketing",
     subtitle: "Marketing Agency",
@@ -46,8 +34,8 @@ export const projects: Project[] = [
     liveUrl: "https://www.butlercomarketing.com",
     category: "Agency",
     sector: "Marketing & Agency",
-      role: "Marketing website",
-    },
+    role: "Marketing website",
+  },
   {
     title: "ModernX SaaS",
     subtitle: "Product Platform",
@@ -58,8 +46,8 @@ export const projects: Project[] = [
     liveUrl: "https://saas.modernxwebs.com",
     category: "SaaS",
     sector: "SaaS & Product",
-      role: "Product landing",
-    },
+    role: "Product landing",
+  },
   {
     title: "Zeko",
     subtitle: "Modern Product Brand",
@@ -70,8 +58,8 @@ export const projects: Project[] = [
     liveUrl: "https://zeko.modernxwebs.com",
     category: "Product",
     sector: "Product",
-      role: "Brand website",
-    },
+    role: "Brand website",
+  },
   {
     title: "Pinakkaa",
     subtitle: "Digital Marketing Agency",
@@ -82,8 +70,8 @@ export const projects: Project[] = [
     liveUrl: "https://pinakkaa.com",
     category: "Agency",
     sector: "Marketing & Agency",
-      role: "Marketing website",
-    },
+    role: "Marketing website",
+  },
   {
     title: "Stratus",
     subtitle: "Architecture & Interiors",
@@ -94,7 +82,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.stratus.company",
     category: "Architecture",
     sector: "Architecture & Interiors",
-      role: "Brand website",
+    role: "Brand website",
       },
   {
     title: "Tula Projects",
@@ -106,7 +94,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.tulaprojects.com",
     category: "Real Estate",
     sector: "Real Estate & Development",
-      role: "Brand website",
+    role: "Brand website",
       },
   {
     title: "Studio Real Estate",
@@ -118,8 +106,8 @@ export const projects: Project[] = [
     liveUrl: "https://vivektripathi9.github.io/Real_estate_Portfolio/",
     category: "Real Estate",
     sector: "Real Estate & Development",
-      role: "Brand website",
-    },
+    role: "Brand website",
+  },
   {
     title: "Hotwheelz",
     subtitle: "Automotive",
@@ -130,8 +118,8 @@ export const projects: Project[] = [
     liveUrl: "https://hotwheelz.co",
     category: "Automotive",
     sector: "Automotive",
-      role: "Brand website",
-    },
+    role: "Brand website",
+  },
   {
     title: "Adchitects",
     subtitle: "Creative Studio",
@@ -142,6 +130,6 @@ export const projects: Project[] = [
     liveUrl: "https://adchitects.co",
     category: "Agency",
     sector: "Marketing & Agency",
-      role: "Brand website",
-    },
+    role: "Brand website",
+  },
 ];
